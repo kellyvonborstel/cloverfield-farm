@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-success py-2 px-2 px-lg-4 shadow-sm" id="main-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success py-2 px-2 px-lg-4 shadow-sm" id="main-nav">
         <a class="navbar-brand" href="index.html">
             <img src="images/cloverfield-logo.svg" id="logo" alt="Cloverfield Farm"></a>
         <button class="navbar-toggler" id="toggle-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -34,63 +34,92 @@
                     <a class="nav-link" href="recipes.html">Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
+                    <a class="nav-link active" href="kids.html">Kid&rsquo;s Corner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <div class="jumbotron jumbotron-fluid text-center py-4 mb-0">
+        <button class="btn btn-success mr-4" data-toggle="modal" data-target="#how-to-play">How to Play</button>
+        <a href="kids.html" class="btn text-white btn-success ml-4">Reset Game</a>
+    </div>
+    
+    <div class="modal fade" id="how-to-play" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="how-to-play-title">How to Play</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Click on cards to reveal yummy vegetables. Find all the matches and you win!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-center btn-secondary" data-dismiss="modal">Play Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- game is based on this tutorial https://www.youtube.com/watch?v=ZniVgo8U7ek -->
+    
     <div id="game">
-      <div id="board">
-        <div class="game-card" data-veg="carrot">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/carrot.svg" alt="carrot" class="back">
+        <div id="board">
+            <div class="game-card" data-veg="carrot">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/carrot.svg" alt="carrot" class="back">
+            </div>
+            <div class="game-card" data-veg="broccoli">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/broccoli.svg" alt="broccoli" class="back">
+            </div>
+            <div class="game-card" data-veg="radish">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/radish.svg" alt="radish" class="back">
+            </div>
+            <div class="game-card" data-veg="corn">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/corn.svg" alt="corn" class="back">
+            </div>
+            <div class="game-card" data-veg="eggplant">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/eggplant.svg" alt="eggplant" class="back">
+            </div>
+            <div class="game-card" data-veg="peas">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/peas.svg" alt="peas" class="back">
+            </div>
+            <div class="game-card" data-veg="carrot">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/carrot.svg" alt="carrot" class="back">
+            </div>
+            <div class="game-card" data-veg="broccoli">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/broccoli.svg" alt="broccoli" class="back">
+            </div>
+            <div class="game-card" data-veg="radish">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/radish.svg" alt="radish" class="back">
+            </div>
+            <div class="game-card" data-veg="corn">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/corn.svg" alt="corn" class="back">
+            </div>
+            <div class="game-card" data-veg="eggplant">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/eggplant.svg" alt="eggplant" class="back">
+            </div>
+            <div class="game-card" data-veg="peas">
+                <img src="images/clover.svg" alt="clover" class="front">
+                <img src="images/peas.svg" alt="peas" class="back">
+            </div>
         </div>
-        <div class="game-card" data-veg="broccoli">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/broccoli.svg" alt="broccoli" class="back">
-        </div>
-        <div class="game-card" data-veg="radish">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/radish.svg" alt="radish" class="back">
-        </div>
-        <div class="game-card" data-veg="corn">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/corn.svg" alt="corn" class="back">
-        </div>
-        <div class="game-card" data-veg="eggplant">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/eggplant.svg" alt="eggplant" class="back">
-        </div>
-        <div class="game-card" data-veg="peas">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/peas.svg" alt="peas" class="back">
-        </div>
-        <div class="game-card" data-veg="carrot">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/carrot.svg" alt="carrot" class="back">
-        </div>
-        <div class="game-card" data-veg="broccoli">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/broccoli.svg" alt="broccoli" class="back">
-        </div>
-        <div class="game-card" data-veg="radish">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/radish.svg" alt="radish" class="back">
-        </div>
-        <div class="game-card" data-veg="corn">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/corn.svg" alt="corn" class="back">
-        </div>
-        <div class="game-card" data-veg="eggplant">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/eggplant.svg" alt="eggplant" class="back">
-        </div>
-        <div class="game-card" data-veg="peas">
-          <img src="images/clover.svg" alt="clover" class="front">
-          <img src="images/peas.svg" alt="peas" class="back">
-        </div>
-      </div>
     </div>
 
     <footer class="container-fluid bg-dark text-white text-center py-5">

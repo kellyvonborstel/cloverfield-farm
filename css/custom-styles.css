@@ -12,9 +12,7 @@ body {
   border-color: rgb(255, 255, 255, .5);
 }
 
-h2, h3, h4, h5, h6, 
-.display-3,
-.quote-mark {
+h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
 }
@@ -22,10 +20,6 @@ h2, h3, h4, h5, h6,
 .display-3 {
   font-size: 3rem;
   color: #444;
-}
-
-.btn {
-  /* border-radius: 8px; */
 }
 
 .scroll-box {
@@ -39,15 +33,15 @@ h2, h3, h4, h5, h6,
   text-transform: uppercase;
 }
 
-.quote-mark {
-  font-size: 7rem;
-  max-height: 60px;
-}
-
 #main-nav .nav-link {
   margin-left: 1.5rem;
   font-size: 1.1rem;
   padding-bottom: 0;
+}
+
+.display-3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
 }
 
 .ingredients {
@@ -82,25 +76,23 @@ h2, h3, h4, h5, h6,
 
 #message-form {
   text-align: left;
-  /* max-width: 500px; */
   margin-right: 0;
   margin-left: 0;
 }
 
-/* game styles */
+
+/* game styles — css for game is based on this tutorial https://www.youtube.com/watch?v=ZniVgo8U7ek */
 
 #game {
-  /* padding: 0;
-  margin: 0; */
   display: flex;
   padding: 20px 0 30px;
-  /* height: 100%; */
-  /* box-sizing: border-box; */
-  /* background: red; */
+  position: relative;
 }
 
 #board {
-  width: 640px;
+  position: relative;
+  left: 5px;
+  width: 700px;
   height: 450px;
   display: flex;
   flex-wrap: wrap;
@@ -110,17 +102,11 @@ h2, h3, h4, h5, h6,
 
 .game-card {
   width: calc(25% - 15px);
-  height: calc(33.3% - 10px);
+  height: calc(33.3333333% - 10px);
   position: relative;
-  transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
   margin: 5px;
-}
-
-.game-card:active {
-  transform: scale(0.97);
-  transition: transform .2s;
 }
 
 .game-card.turn {
@@ -144,9 +130,9 @@ h2, h3, h4, h5, h6,
 .back {
   background: rgb(31, 77, 44);
   transform: rotateY(180deg);
+  margin-left: -5px;
 }
 
 #game img {
   width: 100%;
 }
-
