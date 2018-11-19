@@ -82,7 +82,7 @@ h2, h3, h4, h5, h6,
 
 #message-form {
   text-align: left;
-  max-width: 500px;
+  /* max-width: 500px; */
   margin-right: 0;
   margin-left: 0;
 }
@@ -93,6 +93,7 @@ h2, h3, h4, h5, h6,
   /* padding: 0;
   margin: 0; */
   display: flex;
+  padding: 20px 0 30px;
   /* height: 100%; */
   /* box-sizing: border-box; */
   /* background: red; */
@@ -100,17 +101,16 @@ h2, h3, h4, h5, h6,
 
 #board {
   width: 640px;
-  height: 640px;
+  height: 450px;
   display: flex;
   flex-wrap: wrap;
-  /* border: 2px solid #000; */
   margin: auto;
+  perspective: 1000px;
 }
 
 .game-card {
   width: calc(25% - 15px);
   height: calc(33.3% - 10px);
-  /* border: 1px solid blueviolet; */
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
@@ -118,9 +118,13 @@ h2, h3, h4, h5, h6,
   margin: 5px;
 }
 
-.game-card active {
-  transform: scale(.97);
+.game-card:active {
+  transform: scale(0.97);
   transition: transform .2s;
+}
+
+.game-card.turn {
+  transform: rotateY(180deg);
 }
 
 .front, .back {
@@ -130,6 +134,7 @@ h2, h3, h4, h5, h6,
   height: 100%;
   padding: 20px;
   border-radius: 5px;
+  backface-visibility: hidden;
 }
 
 .front {
@@ -138,6 +143,7 @@ h2, h3, h4, h5, h6,
 
 .back {
   background: rgb(31, 77, 44);
+  transform: rotateY(180deg);
 }
 
 #game img {
