@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="css/custom-styles.css" rel="stylesheet">
+    
+    <title>Cloverfield Farm</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success py-2 px-2 px-lg-4 shadow-sm" id="main-nav">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/cloverfield-logo.svg" id="logo" alt="Cloverfield Farm"></a>
+        <button class="navbar-toggler" id="toggle-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-success my-3">Contact Us</h2>
+        <div class="row mb-5">
+            <div class="col col-12 col-lg-7 pr-5">
+                <p>Thank you for your interest in Cloverfield Farm. For more information about our products or services, please call or email, or send us a message!</p>
+                <h6>Phone</h6>
+                <p class="text-muted">(503)749-4439</p>
+                <h6>Email</h6>
+                <p><a class="text-success" href="mailto:info@cloverfieldfarm.com">info@cloverfieldfarm.com</a></p>
+                <h6>Mailing Address</h6>
+                <p class="text-muted">10224 Mill Creek Road<br>
+                Aumsville, OR 97325</p>
+            </div>
+            <div class="col col-12 col-lg-5">
+                <h6 class="d-block d-lg-none mt-4 mt-lg-0">Send Message</h3>
+                <form action="https://formspree.io/kellyvonborstel@gmail.com" method="POST" class="contact-form mt-3 mt-lg-0">
+                    <input type="hidden" name="_next" value="contact.html"/>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone <span class="text-muted">(Optional)</span></label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" class="form-control" placeholder="Enter Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message" class="btn btn-success btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- <div class="container py-2">
+        <div class="media py-5">
+            <img class="align-self-center mr-5 d-none d-xl-block" src="images/greenhouse.jpg" alt="Generic placeholder image">
+            <div class="media-body align-middle" id="contact">
+                 	
+               
+                    
+                    <h2 class="text-success my-3">Contact Us</h2>
+                       	
+                    <p>Thank you for your interest in Cloverfield Farm. For more information about our products and services, please call or email us, or send a message using the contact form below.</p>
+                    
+                    <h6>Phone</h6>
+                    <p class="text-muted">(503)749-4439</p>
+                    
+                    <h6>Email</h6>
+                    <p><a class="text-success" href="mailto:info@cloverfieldfarm.com">info@cloverfieldfarm.com</a></p>
+                    
+                    <h6>Mailing Address</h6>
+                    <p class="text-muted">10224 Mill Creek Road<br>
+                    Aumsville, OR 97325</p>
+                    
+                     
+                    
+                    
+                    <div class="container border rounded p-5 mb-5" id="message-form">
+                        <h3 class="mb-4">Send Message</h3>
+                        <form acttion="XXXXXXXXXXXXXXXXXXXX" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone <span class="text-muted">(Optional)</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" value="Send" class="btn btn-success btn-lg">
+                        </form>
+                    </div>
+                    </div>
+                  
+        </div>
+    </div> -->
+
+
+    <footer class="container-fluid bg-dark text-white text-center py-5">
+        <p class="email-form" class="lead">Sign up to receive our monthly newsletter</p>
+        <form action="https://formspree.io/kellyvonborstel@gmail.com" method="POST" class="form-inline justify-content-center">
+            <input type="hidden" name="_next" value="contact.html"/>
+            <div class="input-group">
+                <input type="text" class="form-control" name="email" placeholder="Enter Email">
+                <div class="input-group-append">
+                    <button class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

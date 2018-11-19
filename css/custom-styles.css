@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Montserrat:400,600');
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  width: 300px;
+}
+
+#toggle-icon {
+  border-color: rgb(255, 255, 255, .5);
+}
+
+h2, h3, h4, h5, h6, 
+.display-3,
+.quote-mark {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.display-3 {
+  font-size: 3rem;
+  color: #444;
+}
+
+.btn {
+  /* border-radius: 8px; */
+}
+
+.scroll-box {
+  padding: .7rem;
+  height:480px;
+  overflow-y: scroll;
+}
+
+.email-form,
+.contact-form {
+  text-transform: uppercase;
+}
+
+.quote-mark {
+  font-size: 7rem;
+  max-height: 60px;
+}
+
+#main-nav .nav-link {
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  padding-bottom: 0;
+}
+
+.ingredients {
+  padding: 0;
+}
+
+.ingredients li {
+  list-style: none;
+}
+
+.directions {
+  padding-left: 0;
+  list-style: none;
+}
+
+.directions li {
+  margin-bottom: .75rem;
+}
+
+.media img {
+  width: 40%;
+}
+
+#contact h6 {
+  margin-bottom: .25rem;
+  margin-top: 1.25rem;
+}
+
+#faq dt {
+  color: #666;
+}
+
+#message-form {
+  text-align: left;
+  max-width: 500px;
+  margin-right: 0;
+  margin-left: 0;
+}
