@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   // console.log("DOM fully loaded and parsed");
   var cards = document.querySelectorAll('.game-card');
-  // console.log(cards);
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('click', turnCard);
+    console.log(cards[i]);
+  }
   
   var hasTurnedCard = false;
   var firstCard;
@@ -12,27 +15,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (!hasTurnedCard) {
       hasTurnedCard = true;
       firstCard = this;
+      return;
     } else {
       hasTurnedCard = false;
       secondCard = this;
+      compareCards(); 
     }
-    // this.classList.toggle('turn')
+  }
+
+  function compareCards() {
     if (firstCard.dataset.veg === secondCard.dataset.veg) {
       firstCard.removeEventListener('click', turnCard);
       secondCard.removeEventListener('click', turnCard);
     } else {
       setTimeout(function() {
-        firstCare.classList.remove('turn');
-        secondCare.classList.remove('turn');
+        firstCard.classList.remove('turn');
+        secondCard.classList.remove('turn');
       }, 2000);
     }
   }
-
-
-  
-  
-  for (var i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('click', turnCard);
-    console.log(cards[i]);
-  }
 });
+
