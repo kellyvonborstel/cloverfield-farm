@@ -17,7 +17,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
       secondCard = this;
     }
     // this.classList.toggle('turn')
+    if (firstCard.dataset.veg === secondCard.dataset.veg) {
+      firstCard.removeEventListener('click', turnCard);
+      secondCard.removeEventListener('click', turnCard);
+    } else {
+      setTimeout(function() {
+        firstCare.classList.remove('turn');
+        secondCare.classList.remove('turn');
+      }, 2000);
+    }
   }
+
+
   
   
   for (var i = 0; i < cards.length; i++) {
