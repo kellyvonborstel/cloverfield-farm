@@ -1,6 +1,6 @@
 Cloverfield Farm
 ==============
 
-Organic produce delivery site built with HTML, CSS, JavaScript, Bootstrap
+Organic produce delivery website built with HTML, CSS, JavaScript, Bootstrap
 
-[view site](http://web.engr.oregonstate.edu/~vonborke/cloverfield-farm/index.html)
+[view website](http://web.engr.oregonstate.edu/~vonborke/cloverfield-farm/index.html)
